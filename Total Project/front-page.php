@@ -140,6 +140,9 @@
 				$services->the_post();
 				$imagen = get_field('imagen');
 				$descripcion = get_field('descripcion');
+				if( $imagen == null | $descripcion == null) {
+					continue;
+				}
 				$contador++;
 		?>			
 				<div class="col-md-3 mb-4">
@@ -202,6 +205,9 @@
 				$services->the_post();
 				$imagen = get_field('imagen');
 				$descripcion = get_field('descripcion');
+				if( $imagen == null | $descripcion == null) {
+					continue;
+				}
 				$contador++;
 		?>			
 				<div class="col-md-3 mb-4">
@@ -265,6 +271,9 @@
 				$services->the_post();
 				$imagen = get_field('imagen');
 				$descripcion = get_field('descripcion');
+				if( $imagen == null | $descripcion == null) {
+					continue;
+				}
 				$contador++;
 		?>			
 				<div class="col-md-3 mb-4">

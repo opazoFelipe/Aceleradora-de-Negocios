@@ -84,6 +84,10 @@
 				$services->the_post();
 				$imagen = get_field('imagen');
 				$descripcion = get_field('descripcion');
+				if( $imagen == null | $descripcion == null) {
+					continue;
+				}
+				
 				
 		?>			
 				<div class="col-md-3 mb-4">
