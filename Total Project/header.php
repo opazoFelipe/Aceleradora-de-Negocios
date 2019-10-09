@@ -30,6 +30,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <!-- //Fonts -->
 
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
+
     <!-- Link Estilos Galeria de imagenes -->
     <link rel="stylesheet" href=" <?php bloginfo('template_directory') ?>/css/baguetteBox.min.css">
 
@@ -39,23 +41,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <body>
    <!-- header -->
 <header>
-	<div class="container-fluid fixed-top">
+	<!-- <div class="container-fluid fixed-top"> -->
 		<!-- nav -->
-		<nav class="py-3 d-lg-flex color-fondo">
-			<div id="logo">
-				<h1> <a href="index.html"><span class="fa fa-rocket"></span> Total Project </a></h1>
-			</div>
-			<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
-			<input type="checkbox" id="drop" />
-			<ul class="menu ml-auto mt-1">
-        <li class="active"><a href="index.html">Inicio</a></li>
-        <li class=""><a href="#services">Nuestros Servicios</a></li>
-        <li class=""><a href="#portfolio">Nuestros Trabajos</a></li>
-        <li class=""><a href="#about">Nosotros</a></li>
-				<li class=""><a href="#contact">Contactanos</a></li>
-			</ul>
+		<nav class="py-3 d-lg-flex fondo-nav fixed-top">
+      <div class="container">
+        <div id="logo">
+          <h1> <a href="index.html"><span class="fa fa-rocket"></span> Total Project </a></h1>
+        </div>
+        <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+        <input type="checkbox" id="drop" />
+        <ul class="menu ml-auto mt-1">
+          <li class="active"><a href="index.html">Inicio</a></li>
+          <li class=""><a href="#services">Nuestros Servicios</a></li>
+          <li class=""><a href="#portfolio">Nuestros Trabajos</a></li>
+          <li class=""><a href="#about">Nosotros</a></li>
+          <li class=""><a href="#contact">Contactanos</a></li>
+        </ul>
+      </div>
 		</nav>
 		<!-- //nav -->
-	</div>
+	<!-- </div> -->
 </header>
 <!-- //header -->
