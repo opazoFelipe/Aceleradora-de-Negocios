@@ -128,15 +128,15 @@
 			</div>
 			<div class="col-md-6 mt-md-0">
 				<div class="contact_right">
-					<form action="#" method="post">
+					<form action="<?php bloginfo('template_directory')?>/enviar-correo.php" method="post">
 						<div class="w3_agileits_contact_left">
 							<input type="text" name="Name" placeholder="Tu Nombre" required="">
 							<input type="email" name="Email" placeholder="Tu Email" required="">
 							<input type="text" name="Phone" placeholder="Numero de Telefono" required="">
-							<textarea placeholder="Tu Mensaje Aqui.." required=""></textarea>
+							<textarea placeholder="Tu Mensaje Aqui.." name="mensaje" required=""></textarea>
 						</div>
 						<div class="w3_agileits_contact_right">
-							<button type="submit">Submit</button>
+							<button type="submit">Enviar</button>
 						</div>
 						<div class="clearfix"> </div>
 					</form>

@@ -315,7 +315,7 @@
 			</div>
 			<div class="col-md-6 mt-md-0">
 				<div class="contact_right">
-					<form action="#" method="post">
+					<form action="<?php bloginfo('template_directory')?>/enviar-correo.php" method="post">
 						<div class="w3_agileits_contact_left">
 							<input type="text" name="Name" placeholder="Tu Nombre" required="">
 							<input type="email" name="Email" placeholder="Tu Email" required="">
