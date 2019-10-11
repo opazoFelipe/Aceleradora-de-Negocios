@@ -15,11 +15,11 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 
 }
 
-/* .fondo-nav {
+.custom-font {
     background: url(./images/aluminio.png);
-} */
+}
 
-p, h1, h2, h3, h4, input, button{
+p, h1, h2, h3, h4, input, button, span{
     font-family: 'Oswald', sans-serif;
 }
 

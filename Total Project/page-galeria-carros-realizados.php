@@ -1,8 +1,16 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+
 <!DOCTYPE html>
 <html lang="zxx">
 
 <head>
-    <title>Promote Business Category Bootstrap Responsive Web Template | Home :: W3layouts</title>
+    <title>Total Project</title>
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
@@ -23,6 +31,8 @@
   <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <!-- //Fonts -->
 
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
+
     <!-- Link Estilos Galeria de imagenes -->
     <link rel="stylesheet" href=" <?php bloginfo('template_directory') ?>/css/baguetteBox.min.css">
 
@@ -31,34 +41,37 @@
 </head>
 <body>
    <!-- header -->
-   <!-- <div class="container-fluid fixed-top"> -->
+<header>
+	<!-- <div class="container-fluid fixed-top"> -->
 		<!-- nav -->
 		<nav class="py-3 d-lg-flex fondo-nav fixed-top">
-			<div class="container">
-				<div id="logo">
-					<h1> <a href="index.html"><span class="fa fa-rocket"></span> Total Project </a></h1>
-				</div>
-				<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
-				<input type="checkbox" id="drop" />
-				<ul class="menu ml-auto mt-1">
-					<li class="active"><a href="http://servidor-pruebas.com/curso_wordpress/wordpress/">Inicio</a></li>
-					<li class=""><a href="http://servidor-pruebas.com/curso_wordpress/wordpress/#services">Nuestros Servicios</a></li>
-					<li class=""><a href="http://servidor-pruebas.com/curso_wordpress/wordpress/#portfolio">Nuestros Trabajos</a></li>
-					<li class=""><a href="http://servidor-pruebas.com/curso_wordpress/wordpress/#about">Nosotros</a></li>
-					<li class=""><a href="http://servidor-pruebas.com/curso_wordpress/wordpress/#contact">Contactanos</a></li>
-				</ul>
-			</div>
+      <div class="container">
+        <div id="logo">
+          <h1> <a href="http://localhost/curso_wordpress/wordpress/"><span class="fa fa-rocket custom-font"></span> Total Project </a></h1>
+        </div>
+        <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+        <input type="checkbox" id="drop" />
+        <ul class="menu ml-auto mt-1">
+          <li class="active"><a href="http://localhost/curso_wordpress/wordpress/">Inicio</a></li>
+          <li class=""><a href="http://localhost/curso_wordpress/wordpress/#services">Nuestros Servicios</a></li>
+          <li class=""><a href="http://localhost/curso_wordpress/wordpress/#portfolio">Nuestros Trabajos</a></li>
+          <li class=""><a href="http://localhost/curso_wordpress/wordpress/#about">Nosotros</a></li>
+          <li class=""><a href="#contact">Contactanos</a></li>
+        </ul>
+      </div>
 		</nav>
+		<!-- //nav -->
 	<!-- </div> -->
-	<!-- //nav -->
+</header>
+<!-- //header -->
 
 <!-- portfolio -->
 <section class="portfolio py-5 mt-5 color-negro" id="portfolio">
-	<h1 class="text-center color-blanco-texto">Nuestros Trabajos</h1>
+	<h1 class="text-center color-blanco-texto mb-4">Nuestros Carros de Arrastre Realizados</h1>
 	<?php
 		// WP_Query arguments
 		$args = array (
-			'post_type'              => array( 'foodtrucks_venta' ),
+			'post_type'              => array( 'carros_realizado' ),
 			'post_status'            => array( 'publish' ),
 			'nopaging'               => true,
 			'order'                  => 'ASC',
@@ -77,7 +90,6 @@
 		// The Loop
 		if ( $services->have_posts() ) {
 	?>		
-			<h1 class="text-left color-blanco-texto">Foodtrucks</h1>
 			<div class="tz-gallery">
 				<div class="row">
 			
@@ -122,9 +134,6 @@
 		<h3 class="heading mb-sm-5"> Contactanos </h3>
 		<div class="row contact_information">
 			<div class="col-md-3 contact_left">
-				<!-- <div class="contact_border p-4">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6350041.310790406!2d30.68773492426509!3d39.0014851732576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b0155c964f2671%3A0x40d9dbd42a625f2a!2sTurkey!5e0!3m2!1sen!2sin!4v1522753415269"></iframe>
-				</div> -->
 			</div>
 			<div class="col-md-6 mt-md-0">
 				<div class="contact_right">
@@ -146,6 +155,5 @@
 	</div>
 </section>
 <!-- //Contact page -->
-
 
 <?php get_footer() ?>

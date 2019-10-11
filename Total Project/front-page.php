@@ -113,7 +113,7 @@
 <?php
 	// WP_Query arguments
 	$args = array (
-		'post_type'              => array( 'foodtrucks_venta' ),
+		'post_type'              => array( 'foodtrucks_realizado' ),
 		'post_status'            => array( 'publish' ),
 		'nopaging'               => true,
 		'order'                  => 'ASC',
@@ -167,7 +167,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-4 offset-4">
-				<a href="http://servidor-pruebas.com/curso_wordpress/wordpress/inicio/galeria-realizados/" class="btn btn-primary btn-block mb-4">Ver Mas</a>
+				<a href="http://localhost/curso_wordpress/wordpress/inicio/galeria-foodtrucks-realizados/" class="btn btn-primary btn-block mb-4">Ver Mas</a>
 			</div>
 		</div>
 	</div>
@@ -179,7 +179,7 @@
 <?php
 	// WP_Query arguments
 	$args = array (
-		'post_type'              => array( 'foodtrucks_venta' ),
+		'post_type'              => array( 'carros_realizado' ),
 		'post_status'            => array( 'publish' ),
 		'nopaging'               => true,
 		'order'                  => 'ASC',
@@ -232,7 +232,8 @@
 		</div>
 		<div class="row">
 			<div class="col-md-4 offset-4">
-				<a href="http://servidor-pruebas.com/curso_wordpress/wordpress/inicio/galeria-realizados/" class="btn btn-primary btn-block mb-4">Ver Mas</a>
+				<form action=""></form>
+				<a href="http://localhost/curso_wordpress/wordpress/inicio/galeria-carros-realizados/" class="btn btn-primary btn-block mb-4" name="boton1" id="boton1">Ver Mas</a>
 			</div>
 		</div>
 	</div>
@@ -244,7 +245,7 @@
 <?php
 	// WP_Query arguments
 	$args = array (
-		'post_type'              => array( 'foodtrucks_venta' ),
+		'post_type'              => array( 'foodtrucks_realizado' ),
 		'post_status'            => array( 'publish' ),
 		'nopaging'               => true,
 		'order'                  => 'ASC',
@@ -297,7 +298,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-4 offset-4">
-				<a href="http://servidor-pruebas.com/curso_wordpress/wordpress/inicio/galeria-realizados/" class="btn btn-primary btn-block mb-4 font-google-1">Ver Mas</a>
+				<a href="http://localhost/curso_wordpress/wordpress/galeria-estructuras-metalicas-realizadas/" class="btn btn-primary btn-block mb-4 font-google-1" name="boton" id="boton">Ver Mas</a>
 			</div>
 		</div>
 	</div>
@@ -306,12 +307,9 @@
 <!-- Contact page -->
 <section class="contact mt-0 py-5" id="contact">
 	<div class="container py-md-5 py-5">
-		<h3 class="heading font-google-1"> Contactanos </h3>
+		<h3 class="heading mb-sm-5"> Contactanos </h3>
 		<div class="row contact_information">
 			<div class="col-md-3 contact_left">
-				<!-- <div class="contact_border p-4">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6350041.310790406!2d30.68773492426509!3d39.0014851732576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b0155c964f2671%3A0x40d9dbd42a625f2a!2sTurkey!5e0!3m2!1sen!2sin!4v1522753415269"></iframe>
-				</div> -->
 			</div>
 			<div class="col-md-6 mt-md-0">
 				<div class="contact_right">
@@ -320,10 +318,10 @@
 							<input type="text" name="Name" placeholder="Tu Nombre" required="">
 							<input type="email" name="Email" placeholder="Tu Email" required="">
 							<input type="text" name="Phone" placeholder="Numero de Telefono" required="">
-							<textarea placeholder="Tu Mensaje Aqui.." required=""></textarea>
+							<textarea placeholder="Tu Mensaje Aqui.." name="mensaje" required=""></textarea>
 						</div>
 						<div class="w3_agileits_contact_right">
-							<button type="submit">Submit</button>
+							<button type="submit">Enviar</button>
 						</div>
 						<div class="clearfix"> </div>
 					</form>
@@ -333,6 +331,7 @@
 	</div>
 </section>
 <!-- //Contact page -->
+
 
 
 

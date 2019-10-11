@@ -9,7 +9,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="zxx">
 
 <head>
-    <title>Promote Business Category Bootstrap Responsive Web Template | Home :: W3layouts</title>
+    <title>Total Project</title>
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
@@ -46,12 +46,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<nav class="py-3 d-lg-flex fondo-nav fixed-top">
       <div class="container">
         <div id="logo">
-          <h1> <a href="index.html"><span class="fa fa-rocket"></span> Total Project </a></h1>
+          <h1> <a href="http://localhost/curso_wordpress/wordpress/"><span class="fa fa-rocket custom-font"></span> Total Project </a></h1>
         </div>
         <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
         <input type="checkbox" id="drop" />
         <ul class="menu ml-auto mt-1">
-          <li class="active"><a href="index.html">Inicio</a></li>
+          <li class="active"><a href="http://localhost/curso_wordpress/wordpress/">Inicio</a></li>
           <li class=""><a href="#services">Nuestros Servicios</a></li>
           <li class=""><a href="#portfolio">Nuestros Trabajos</a></li>
           <li class=""><a href="#about">Nosotros</a></li>
