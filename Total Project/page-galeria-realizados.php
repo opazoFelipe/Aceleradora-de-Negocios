@@ -67,7 +67,7 @@
 				$services->the_post();
 				$imagen = get_field('imagen');
 				// $descripcion = get_field('descripcion');
-				if( $imagen == null) {
+				if( $imagen == null | strlen($imagen) < 5) {
 					continue;
 				}
 				
@@ -78,7 +78,7 @@
 						<a class="lightbox" href=" <?php echo $imagen ?> ">
 							<img src="<?php echo $imagen ?>" alt="" class="responsive">
 						</a>
-			
+						<a href="#contact" class="btn btn-block btn-info">Referenciar</a>
 					</div>
 				</div>
 		<?php
@@ -96,33 +96,5 @@
 			</div>
 		</div>
 </section>
-
-<!-- Contact page -->
-<section class="contact mt-0 py-5" id="contact">
-	<div class="container py-md-5 py-5">
-		<h3 class="heading mb-sm-5"> Contactanos </h3>
-		<div class="row contact_information">
-			<div class="col-md-3 contact_left">
-			</div>
-			<div class="col-md-6 mt-md-0">
-				<div class="contact_right">
-					<form action="<?php bloginfo('template_directory')?>/enviar-correo.php" method="post">
-						<div class="w3_agileits_contact_left">
-							<input type="text" name="Name" placeholder="Tu Nombre" required="">
-							<input type="email" name="Email" placeholder="Tu Email" required="">
-							<input type="text" name="Phone" placeholder="Numero de Telefono" required="">
-							<textarea placeholder="Tu Mensaje Aqui.." name="mensaje" required=""></textarea>
-						</div>
-						<div class="w3_agileits_contact_right">
-							<button type="submit">Enviar</button>
-						</div>
-						<div class="clearfix"> </div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- //Contact page -->
 
 <?php get_footer() ?>

@@ -108,8 +108,8 @@
 
 <!-- portfolio -->
 <!-- Foodtrucks Realizados -->
-<section class="portfolio py-5 color-negro mb-0" id="portfolio">
-	<h1 class="text-center font-google-1 color-blanco-texto">Nuestros Trabajos</h1>
+<section class="portfolio color-negro color-blanco-texto mb-0" id="portfolio">
+	<h1 class="text-center font-google-1 color-blanco-texto pt-5">Nuestros Trabajos</h1>
 <?php
 	// WP_Query arguments
 	$args = array (
@@ -140,7 +140,7 @@
 				$services->the_post();
 				$imagen = get_field('imagen');
 				// $descripcion = get_field('descripcion');
-				if( $imagen == null ) {
+				if( $imagen == null | strlen($imagen) < 5 ) {
 					continue;
 				}
 				$contador++;
@@ -177,7 +177,7 @@
 </section>
 
 <!-- Carros de Arrastre -->
-<section class="portfolio py-5 color-verde mb-0" id="portfolio">
+<section class="portfolio color-negro color-blanco-texto mb-0" id="portfolio">
 	
 <?php
 	// WP_Query arguments
@@ -209,7 +209,7 @@
 				$services->the_post();
 				$imagen = get_field('imagen');
 				// $descripcion = get_field('descripcion');
-				if( $imagen == null) {
+				if( $imagen == null | strlen($imagen) < 5) {
 					continue;
 				}
 				$contador++;
@@ -247,11 +247,11 @@
 
 <!-- Estructuras -->
 
-<section class="portfolio py-5 color-fondo mb-0" id="portfolio">
+<section class="portfolio color-negro color-blanco-texto mb-0" id="portfolio">
 <?php
 	// WP_Query arguments
 	$args = array (
-		'post_type'              => array( 'foodtrucks_realizado' ),
+		'post_type'              => array( 'estructura_realizada' ),
 		'post_status'            => array( 'publish' ),
 		'nopaging'               => true,
 		'order'                  => 'ASC',
@@ -278,7 +278,7 @@
 				$services->the_post();
 				$imagen = get_field('imagen');
 				// $descripcion = get_field('descripcion');
-				if( $imagen == null ) {
+				if( $imagen == null | strlen($imagen) < 5 ) {
 					continue;
 				}
 				$contador++;
@@ -312,36 +312,5 @@
 		</div>
 	</div>
 </section>
-
-<!-- Contact page -->
-<section class="contact mt-0 py-5" id="contact">
-	<div class="container py-md-5 py-5">
-		<h3 class="heading mb-sm-5"> Contactanos </h3>
-		<div class="row contact_information">
-			<div class="col-md-3 contact_left">
-			</div>
-			<div class="col-md-6 mt-md-0">
-				<div class="contact_right">
-					<form action="<?php bloginfo('template_directory')?>/enviar-correo.php" method="post">
-						<div class="w3_agileits_contact_left">
-							<input type="text" name="Name" placeholder="Tu Nombre" required="">
-							<input type="email" name="Email" placeholder="Tu Email" required="">
-							<input type="text" name="Phone" placeholder="Numero de Telefono" required="">
-							<textarea placeholder="Tu Mensaje Aqui.." name="mensaje" required=""></textarea>
-						</div>
-						<div class="w3_agileits_contact_right">
-							<button type="submit">Enviar</button>
-						</div>
-						<div class="clearfix"> </div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- //Contact page -->
-
-
-
 
 <?php get_footer() ?>
