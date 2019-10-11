@@ -4,7 +4,7 @@
     $numeroTelefono = $_POST['Phone'];
     $origen = $_POST['Email']; 
     $destinatario = 'test11.test.test123@gmail.com';
-    $mensaje = $_POST['mensaje'];
+    $mensaje = $_POST['Message'];
 
     $asunto = "Contacto desde pagina web"; 
 
@@ -13,9 +13,13 @@
     $cuerpo .= "Numero de Telefono: ".$numeroTelefono."\n\n";
     $cuerpo .= "Mensaje: ".$mensaje."\n";
 
-    mail($destinatario,$asunto,$cuerpo);
+    if(mail($destinatario,$asunto,$cuerpo)) {
+        echo 'Su consulta ha sido enviada';
+    } else {
+        echo 'error al enviar la consulta';
+    }
 
-    header("Location:http://localhost/curso_wordpress/wordpress/");
+    // header("Location:http://localhost/curso_wordpress/wordpress/");
 
 ?>
 

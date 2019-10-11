@@ -1,5 +1,9 @@
 
 <!-- Contact page -->
+<div class="spinner-border" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+
 <section class="contact mt-0 py-5" id="contact">
 	<div class="container py-md-5 py-5">
 		<h3 class="heading mb-sm-5"> Contactanos </h3>
@@ -8,12 +12,12 @@
 			</div>
 			<div class="col-md-6 mt-md-0">
 				<div class="contact_right">
-					<form action="<?php bloginfo('template_directory')?>/enviar-correo.php" method="post">
+					<form action="<?php bloginfo('template_directory')?>/enviar-correo.php" id="contactForm" method="post" onsubmit="enviarCorreo()">
 						<div class="w3_agileits_contact_left">
 							<input type="text" name="Name" placeholder="Tu Nombre" required="">
 							<input type="email" name="Email" placeholder="Tu Email" required="">
 							<input type="text" name="Phone" placeholder="Numero de Telefono" required="">
-							<textarea placeholder="Tu Mensaje Aqui.." name="mensaje" required=""></textarea>
+							<textarea placeholder="Tu Mensaje Aqui.." name="Message" required=""></textarea>
 						</div>
 						<div class="w3_agileits_contact_right">
 							<button type="submit">Enviar</button>
@@ -66,10 +70,10 @@
 
 
 <!-- Scripts -->
-
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
@@ -77,17 +81,14 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+	<script src=" <?php bloginfo('template_directory') ?>/js/index.js"></script>
     <script src=" <?php bloginfo('template_directory') ?>/js/baguetteBox.min.js"></script>
 
     <script>
         baguetteBox.run('.tz-gallery');
     </script>
 
-<<<<<<< HEAD
-	<!-- <asdasd -->
-=======
 <!-- //Scripts -->
->>>>>>> envio-correos
 
 </body>
 </html>
