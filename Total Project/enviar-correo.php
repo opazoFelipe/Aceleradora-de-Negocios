@@ -1,5 +1,9 @@
 <?php 
     
+    $imagenReferenciada = $_POST['nombreImagen'];
+    if(empty($imagenReferenciada)) {
+        $imagenReferenciada = 'no hay referencia';
+    }
     $nombre = $_POST['Name'];
     $numeroTelefono = $_POST['Phone'];
     $origen = $_POST['Email']; 
@@ -11,6 +15,7 @@
     $cuerpo = "De: ".$nombre."\n";
     $cuerpo .= "Correo: ".$origen."\n";
     $cuerpo .= "Numero de Telefono: ".$numeroTelefono."\n\n";
+    $cuerpo .= "Titulo de imagen referenciada: ".$imagenReferenciada."\n";
     $cuerpo .= "Mensaje: ".$mensaje."\n";
 
     if(mail($destinatario,$asunto,$cuerpo)) {

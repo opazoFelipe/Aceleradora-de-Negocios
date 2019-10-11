@@ -1,6 +1,8 @@
 <?php get_header() ?> 
 
 <?php
+
+	$imagenReferenciada = '';
 	if(isset($_POST['pagina'])) {
 
 		$pagina = $_POST['pagina'];
@@ -78,7 +80,7 @@
 						<a class="lightbox" href=" <?php echo $imagen ?> ">
 							<img src="<?php echo $imagen ?>" alt="" class="responsive">
 						</a>
-						<a href="#contact" class="btn btn-block btn-info">Referenciar</a>
+						<a href="#contact" class="btn btn-block btn-info" name=" <?php echo the_title(); ?> " onclick="marcarReferencia(this.name)">Referenciar</a>
 					</div>
 				</div>
 		<?php

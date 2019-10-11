@@ -6,6 +6,16 @@
 function enviarCorreo() {
 
     event.preventDefault();
+
+    // if(validarCamposFormulario() == false)
+    //     return
+    $("#centralModalSuccess").modal("show");
+    formatear_formulario();
+    return;
+
+    const modalCarga = $("#mensaje-de-carga");
+    modalCarga.text('Enviando su Mensaje');
+    const animacionCarga = $("#animacion-carga");
     const form = $("#contactForm");
 
     $.ajax({
@@ -15,11 +25,12 @@ function enviarCorreo() {
         type : 'POST',
         // código a ejecutar si la petición se realiza correctmante;
         success : function(respuesta) {
-           alert(respuesta)
+            animacionCarga.hide();
+            modalCarga.text(respuesta);
         },
 
         beforeSend:function(objeto){ 
-           alert('enviado peticion');
+            $("#centralModalSuccess").modal("show");
         },
     
         // código a ejecutar si la petición falla;
@@ -32,4 +43,16 @@ function enviarCorreo() {
             // alert('Petición realizada');
         }
     });
+}
+
+function marcarReferencia(titulo) {
+    // Le da como valor el titulo de la imagen referenciada al campo nombreImagen del formulario
+    document.getElementById("nombreImagen").value = titulo;
+}
+
+function formatear_formulario() {
+    let camposFormulario = $("#contactForm").children();
+    for(let i = 0; i < 3; i++) {
+        camposFormulario[i].text("asd");
+    }
 }

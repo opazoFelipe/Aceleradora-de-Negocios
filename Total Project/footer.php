@@ -14,10 +14,11 @@
 				<div class="contact_right">
 					<form action="<?php bloginfo('template_directory')?>/enviar-correo.php" id="contactForm" method="post" onsubmit="enviarCorreo()">
 						<div class="w3_agileits_contact_left">
-							<input type="text" name="Name" placeholder="Tu Nombre" required="">
-							<input type="email" name="Email" placeholder="Tu Email" required="">
-							<input type="text" name="Phone" placeholder="Numero de Telefono" required="">
-							<textarea placeholder="Tu Mensaje Aqui.." name="Message" required=""></textarea>
+							<input type="hidden" name="nombreImagen" id="nombreImagen">
+							<input type="text" id="Name" name="Name" placeholder="Tu Nombre" required="">
+							<input type="email" id="Email" name="Email" placeholder="Tu Email" required="">
+							<input type="text" id="Phone" name="Phone" placeholder="Numero de Telefono" required="">
+							<textarea placeholder="Tu Mensaje Aqui.." id="Message" name="Message" required=""></textarea>
 						</div>
 						<div class="w3_agileits_contact_right">
 							<button type="submit">Enviar</button>
@@ -30,6 +31,40 @@
 	</div>
 </section>
 <!-- //Contact page -->
+
+<!-- Modal de cargando peticion de correo -->
+	<!-- Central Modal Medium Success -->
+<div class="modal fade" id="centralModalSuccess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-notify modal-success" role="document">
+    <!--Content-->
+    <div class="modal-content">
+      <!--Header-->
+      <div class="modal-header fondo-nav">
+        <p class="heading lead text-light">Consulta Enviada</p>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="white-text">&times;</span>
+        </button>
+      </div>
+
+      <!--Body-->
+      <div class="modal-body">
+        <div class="text-center">
+		  <p>Le responderemos tan rapido como sea posible</p>
+		  <img src=" <?php bloginfo('template_directory') ?>/images/logo.png " height="100" alt="">
+        </div>
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+        <a type="button" class="btn btn-primary btn-lg text-light" data-dismiss="modal">Listo</a>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!-- Central Modal Medium Success-->
 
 <!-- footer -->
 <footer class="py-md-5 py-3">
