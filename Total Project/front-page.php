@@ -167,7 +167,10 @@
 		</div>
 		<div class="row">
 			<div class="col-md-4 offset-4">
-				<a href="http://localhost/curso_wordpress/wordpress/inicio/galeria-foodtrucks-realizados/" class="btn btn-primary btn-block mb-4">Ver Mas</a>
+				<form action="http://localhost/curso_wordpress/wordpress/galeria-realizados/" method="POST" target="_blank">
+					<input type="hidden" name="pagina" value="foodtrucks">
+					<input type="submit" class="btn btn-primary btn-block mb-4 font-google-1" value="Ver Mas">
+				</form>
 			</div>
 		</div>
 	</div>
@@ -233,7 +236,10 @@
 		<div class="row">
 			<div class="col-md-4 offset-4">
 				<form action=""></form>
-				<a href="http://localhost/curso_wordpress/wordpress/inicio/galeria-carros-realizados/" class="btn btn-primary btn-block mb-4" name="boton1" id="boton1">Ver Mas</a>
+					<form action="http://localhost/curso_wordpress/wordpress/galeria-realizados/" method="POST" target="_blank">
+						<input type="hidden" name="pagina" value="carros">
+						<input type="submit" class="btn btn-primary btn-block mb-4 font-google-1" value="Ver Mas">
+					</form>
 			</div>
 		</div>
 	</div>
@@ -298,7 +304,10 @@
 		</div>
 		<div class="row">
 			<div class="col-md-4 offset-4">
-				<a href="http://localhost/curso_wordpress/wordpress/galeria-estructuras-metalicas-realizadas/" class="btn btn-primary btn-block mb-4 font-google-1" name="boton" id="boton">Ver Mas</a>
+				<form action="http://localhost/curso_wordpress/wordpress/galeria-realizados/" method="POST" target="_blank">
+					<input type="hidden" name="pagina" value="estructuras">
+					<input type="submit" class="btn btn-primary btn-block mb-4 font-google-1" value="Ver Mas">
+				</form>
 			</div>
 		</div>
 	</div>
