@@ -52,9 +52,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <input type="checkbox" id="drop" />
         <ul class="menu ml-auto mt-1">
           <li class="active"><a href="http://localhost/curso_wordpress/wordpress/">Inicio</a></li>
-          <li class=""><a href="#services">Nuestros Servicios</a></li>
-          <li class=""><a href="#portfolio">Nuestros Trabajos</a></li>
-          <li class=""><a href="#about">Nosotros</a></li>
+          <li class=""><a href="http://localhost/curso_wordpress/wordpress/#services">Nuestros Servicios</a></li>
+          <li class=""><a href="http://localhost/curso_wordpress/wordpress/#portfolio">Nuestros Trabajos</a></li>
+          <li class=""><a href="http://localhost/curso_wordpress/wordpress/#about">Nosotros</a></li>
           <li class=""><a href="#contact">Contactanos</a></li>
         </ul>
       </div>
