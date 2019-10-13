@@ -49,10 +49,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!-- nav -->
 		<nav class="py-3 d-lg-flex fondo-nav fixed-top">
       <div class="container">
-        <div id="logo">
-          <h1> <a href="http://localhost/curso_wordpress/wordpress/"><span class="fa fa-rocket custom-font"></span> Total Project </a></h1>
-        </div>
-        <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+      <a class="navbar-brand" href="http://localhost/curso_wordpress/wordpress/">
+          <img src="<?php bloginfo('template_directory') ?>/images/logo.png" class="logo" alt="">
+        </a>
+        <!-- <div id="logo">
+          <h1> <a href=""><span class="fa fa-rocket custom-font"></span> Total Project </a></h1>
+        </div> -->
+        <label for="drop" class="toggle rounded"><span class="fa fa-bars"></span></label>
         <input type="checkbox" id="drop" />
         <ul class="menu ml-auto mt-1">
           <li class="active"><a href="http://localhost/curso_wordpress/wordpress/">Inicio</a></li>

@@ -37,6 +37,20 @@
 </div>
 <!-- //banner -->
 
+<!-- Certificacion -->
+<section class="services py-5 cert" id="services">
+	<div class="container py-md-5 py-3">
+		<div class="row">
+			<div class="col-lg-6 align-middle mt-5">
+					<h2 class="heading color-blanco-texto align-middle mb-2">Todos Nuestros Food Trucks Estan 	Certificados</h2>
+			</div>
+			<div class="col-lg-6 ">
+				<img src="<?php bloginfo('template_directory') ?>/images/certificacion.png" class="ml-5 certificacion" alt="" />
+			</div>
+		</div>
+	</div>
+</section>
+
 <!-- Servicios -->
 <section class="services py-5" id="services">
 	<div class="container py-md-5 py-3">

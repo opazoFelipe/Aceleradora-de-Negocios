@@ -19,10 +19,14 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     background: url(./images/aluminio.png);
 }
 
-p, h1, h2, h3, h4, input, button, span{
+p, h1, h2, h3, h4, input, button, span, li{
     font-family: 'Oswald', sans-serif;
 }
 
+li {
+    /* font-size: 25px; */
+    padding-top: 10px;
+}
 
 
 .color-blanco-texto {
@@ -59,9 +63,22 @@ background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Fi
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.posicion-logo {
-    margin-top: -15px;
+.logo {
+    height: 75px;
+    margin: -15px 0px;
 }
 
+.certificacion {
+    height: 400px;
+    width: 80%;
+    margin-bottom: -25px;
+}
+
+.cert {
+    background: #56CCF2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
   
   

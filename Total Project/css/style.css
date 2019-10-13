@@ -275,13 +275,16 @@ li > a:only-child:after { content: ''; }
 
 	.toggle:hover {
 		color:#333;
-		background-color: #fff;
+		/* background-color: #fff; */
 	}
 
 	/* Display Dropdown when clicked on Parent Lable */
 	[id^=drop]:checked + ul {
 		display: block;
-		background: #fff;
+        /* background: #fff; */
+        background: #f12711;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 		padding: 15px 0;
 		width:100%;
 		text-align: center;
@@ -290,7 +293,7 @@ li > a:only-child:after { content: ''; }
 	/* Change menu item's width to 100% */
 	nav ul li {
 		display: block;
-		width: 100%;
+        width: 100%;
 		padding: 7px 0;
 		}
 	nav a{
@@ -304,7 +307,7 @@ li > a:only-child:after { content: ''; }
 	}
 	nav ul ul .toggle,
 	nav ul ul a {
-		padding: 0 40px;
+        padding: 0 40px;
 	}
 
 	nav ul ul ul a {
@@ -320,14 +323,13 @@ li > a:only-child:after { content: ''; }
 	nav ul ul a,
 	nav ul ul ul a{
 		padding:14px 20px;	
-		color:#FFF;
 		font-size:17px; 
 	}
   
   
 	nav ul li ul li .toggle,
 	nav ul ul a {
-		background-color: #fff; 
+        /* color: #ffc107c7; */
 	}
 	nav ul ul li a {
 		font-size: 15px;
@@ -339,7 +341,6 @@ li > a:only-child:after { content: ''; }
 	nav ul ul {
 		float: none;
 		position:static;
-		color: #ffffff;
 		/* has to be the same number as the "line-height" of "nav a" */
 	}
 		
@@ -353,7 +354,7 @@ li > a:only-child:after { content: ''; }
 	nav ul ul li {
 		display: block;
 		width: 100%;
-		padding: 0;
+        padding: 0;
 	}
 
 	nav ul ul ul li {

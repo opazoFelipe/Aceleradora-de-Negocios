@@ -10,9 +10,8 @@ function enviarCorreo() {
     // if(validarCamposFormulario() == false)
     //     return
     $("#centralModalSuccess").modal("show");
-    formatear_formulario();
-    return;
-
+    // formatear_formulario();
+    
     const modalCarga = $("#mensaje-de-carga");
     modalCarga.text('Enviando su Mensaje');
     const animacionCarga = $("#animacion-carga");
