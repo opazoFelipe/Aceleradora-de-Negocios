@@ -20,7 +20,9 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 }
 
 p, h1, h2, h3, h4, input, button, span, li{
-    font-family: 'Oswald', sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Indie Flower', cursive; */
+    font-family: 'Acme', sans-serif;
 }
 
 li {
