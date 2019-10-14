@@ -16,7 +16,7 @@
 				'order'                  => 'ASC',
 				'orderby'                => 'menu_order',
 			);
-			$titulo = 'Nuestros Food Trucks Realizados';
+			$titulo = 'Galeria de Food Trucks';
 		}
 		if($pagina == 'carros') {
 			// WP_Query arguments
@@ -27,7 +27,7 @@
 				'order'                  => 'ASC',
 				'orderby'                => 'menu_order',
 			);
-			$titulo = 'Nuestros Carros de Arrastre Realizados';
+			$titulo = 'Galeria de Carros de Arrastre';
 		}	
 		
 		if($pagina == 'estructuras') {
@@ -39,7 +39,7 @@
 				'order'                  => 'ASC',
 				'orderby'                => 'menu_order',
 			);
-			$titulo = 'Nuestras Estructuras Metallicas Realizadas';
+			$titulo = 'Galeria de Estructuras Metalicas';
 		}	
 	}
 ?>
@@ -47,7 +47,7 @@
 
 <!-- portfolio -->
 <section class="portfolio py-5 mt-5 color-negro" id="portfolio">
-	<h1 class="text-center color-blanco-texto mb-4"> <?php echo $titulo; ?> </h1>
+	<h1 class="text-center color-blanco-texto mb-4 mt-4"> <?php echo $titulo; ?> </h1>
 	<?php
 		// The Query
 		$services = new WP_Query( $args );

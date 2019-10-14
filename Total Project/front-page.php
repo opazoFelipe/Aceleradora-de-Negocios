@@ -42,7 +42,7 @@
 		<div class="container py-md-5 py-3">
 			<div class="row">
 				<div class="col-lg-6 align-middle mt-5">
-						<h2 class="heading color-blanco-texto align-middle mb-2">Todos Nuestros Food Trucks Estan 	Certificados</h2>
+						<h2 class="heading color-blanco-texto align-middle mb-2">Todos Nuestros Food Trucks Estan Certificados Por SEC TE1</h2>
 				</div>
 				<div class="col-lg-6 ">
 					<img src="<?php bloginfo('template_directory') ?>/images/certificacion.png" class="ml-5 certificacion" alt="" />
@@ -61,15 +61,25 @@
 				<div class="col-lg-4 col-md-6 col-sm-6 mb-5">
 					<div class="bottom-gd">
 						<span>01</span>
-						<h3 class="mt-4"> Foodtrucks </h3>
-						<p class="mt-2">Integer sit amet mattis quam, sit amet ul tricies velit. Praesent ullam corper dui turpis dolor sit amet.</p>
+						<h3 class="mt-4"> Foodtrucks Personalizados</h3>
+						<p class="mt-2">Desde .......</p>
+						<p class="mt-2">Equipamiento Basico, Semi full y Full</p>
+						<p class="mt-2">etc....</p>
+						<form action="http://localhost/curso_wordpress/wordpress/carros_realizado/carro-1/" method="POST" target="_blank">
+						<input type="hidden" name="pagina" value="foodtrucks">
+						<input type="submit" class="btn btn-primary btn-block mb-4 font-google-1 mt-2" value="Ir A Cotizacion">
+					</form>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-6 mb-5">
 					<div class="bottom-gd">
 						<span>02</span>
-						<h3 class="mt-4"> Carros de Arrastre</h3>
+						<h3 class="mt-4"> Trailers</h3>
 						<p class="mt-2">Integer sit amet mattis quam, sit amet ul tricies velit. Praesent ullam corper dui turpis dolor sit amet.</p>
+						<form action="http://localhost/curso_wordpress/wordpress/galeria-realizados/" method="POST" target="_blank">
+						<input type="hidden" name="pagina" value="foodtrucks">
+						<input type="submit" class="btn btn-primary btn-block mb-4 font-google-1" value="Ver Mas">
+					</form>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-6 mb-5">
@@ -77,12 +87,50 @@
 						<span>03</span>
 						<h3 class="mt-4"> Estructuras Metalicas</h3>
 						<p class="mt-2">Integer sit amet mattis quam, sit amet ul tricies velit. Praesent ullam corper dui turpis dolor sit amet.</p>
+						<form action="http://localhost/curso_wordpress/wordpress/galeria-realizados/" method="POST" target="_blank">
+						<input type="hidden" name="pagina" value="foodtrucks">
+						<input type="submit" class="btn btn-primary btn-block mb-4 font-google-1" value="Ver Mas">
+					</form>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+					<div class="bottom-gd">
+						<span>03</span>
+						<h3 class="mt-4"> Estructuras Metalicas</h3>
+						<p class="mt-2">Integer sit amet mattis quam, sit amet ul tricies velit. Praesent ullam corper dui turpis dolor sit amet.</p>
+						<form action="http://localhost/curso_wordpress/wordpress/galeria-realizados/" method="POST" target="_blank">
+						<input type="hidden" name="pagina" value="foodtrucks">
+						<input type="submit" class="btn btn-primary btn-block mb-4 font-google-1" value="Ver Mas">
+					</form>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+					<div class="bottom-gd">
+						<span>03</span>
+						<h3 class="mt-4"> Estructuras Metalicas</h3>
+						<p class="mt-2">Integer sit amet mattis quam, sit amet ul tricies velit. Praesent ullam corper dui turpis dolor sit amet.</p>
+						<form action="http://localhost/curso_wordpress/wordpress/galeria-realizados/" method="POST" target="_blank">
+						<input type="hidden" name="pagina" value="foodtrucks">
+						<input type="submit" class="btn btn-primary btn-block mb-4 font-google-1" value="Ver Mas">
+					</form>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6 mb-5">
+					<div class="bottom-gd">
+						<span>03</span>
+						<h3 class="mt-4"> Estructuras Metalicas</h3>
+						<p class="mt-2">Integer sit amet mattis quam, sit amet ul tricies velit. Praesent ullam corper dui turpis dolor sit amet.</p>
+						<form action="http://localhost/curso_wordpress/wordpress/galeria-realizados/" method="POST" target="_blank">
+						<input type="hidden" name="pagina" value="foodtrucks">
+						<input type="submit" class="btn btn-primary btn-block mb-4 font-google-1" value="Ver Mas">
+					</form>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 <!-- //Servicios -->
+
 
 <!-- Como Trabajamos -->
 	<section class="about-bottom py-5 color-fondo" id="about">
@@ -122,7 +170,7 @@
 	<!-- portfolio -->
 <!-- Foodtrucks Realizados -->
 	<section class="portfolio color-negro color-blanco-texto mb-0" id="portfolio">
-		<h1 class="text-center font-google-1 color-blanco-texto pt-5">Nuestros Trabajos</h1>
+		<h1 class="text-center font-google-1 color-blanco-texto pt-5">Galeria de Trabajos</h1>
 	<?php
 		// WP_Query arguments
 		$args = array (
