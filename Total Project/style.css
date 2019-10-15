@@ -84,11 +84,16 @@ background: linear-gradient(to right, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, F
 }
   
 .primera-fila {
-    margin-top: 150px;
+    margin-top: 120px;
 }
 
 .single-image {
     width: 100%;
     height: 400px;
     max-height: 400px;
+}
+
+.especificaciones {
+    height: 380px;
+    overflow-y: auto;
 }

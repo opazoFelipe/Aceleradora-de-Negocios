@@ -37,10 +37,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- Link Estilos Galeria de imagenes -->
     <link rel="stylesheet" href=" <?php bloginfo('template_directory') ?>/css/baguetteBox.min.css">
 
-    <!-- Toast -->
-    <link href=" <?php bloginfo('template_directory') ?>/toast/toastr.min.css" rel="stylesheet"> 
-    <script src=" <?php bloginfo('template_directory') ?>/toast/toastr.min.js"></script>
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href=" <?php bloginfo('template_directory') ?>/style.css">
 </head>
